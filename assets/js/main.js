@@ -1,7 +1,45 @@
 !(function($) {
   "use strict";
+    console.log(localStorage.getItem("lang"));
+
+    function calcularEdad(birthday) { 
+
+      birthday=new Date(birthday.split('/').reverse().join('-'));
+      var ageDifMs = Date.now() - birthday.getTime();
+      var ageDate = new Date(ageDifMs); 
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+    // document.getElementById("edad").innerText = calcularEdad('02/12/1992');
+    // var target = $("#edad").get(0);
+    $("#edad").text(calcularEdad('02/12/1992'));
+
 
   // Hero typed
+  // if(localStorage.getItem("lang")="es"){
+  //   if ($('.typed').length) {
+  //     var typed_strings = "Ingeniero de Computación, Desarrollador Web, Asesor de Sistemas y Tecnología";
+  //     typed_strings = typed_strings.split(',')
+  //     new Typed('.typed', {
+  //       strings: typed_strings,
+  //       loop: true,
+  //       typeSpeed: 100,
+  //       backSpeed: 50,
+  //       backDelay: 2000
+  //     });
+  //   }
+  // } else {
+  //   if ($('.typed').length) {
+  //     var typed_strings = $(".typed").data('typed-items');
+  //     typed_strings = typed_strings.split(',')
+  //     new Typed('.typed', {
+  //       strings: typed_strings,
+  //       loop: true,
+  //       typeSpeed: 100,
+  //       backSpeed: 50,
+  //       backDelay: 2000
+  //     });
+  //   }
+  // }
   if ($('.typed').length) {
     var typed_strings = $(".typed").data('typed-items');
     typed_strings = typed_strings.split(',')
