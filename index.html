@@ -823,8 +823,7 @@
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
               <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
               <form
-                action="https://formsubmit.co/rmcn1992@hotmail.com"
-                method="POST"
+                onsubmit="return false"
                 role="form"
                 class="php-email-form"
               >
@@ -860,7 +859,7 @@
                   <input
                     type="text"
                     class="form-control"
-                    name="_subject"
+                    name="subject"
                     id="subject"
                     data-rule="minlen:4"
                     data-msg="Please enter at least 8 chars of subject"
@@ -886,7 +885,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="lang" key="send-message">Send Message</button>
+                  <button type="submit" class="lang" key="send-message" id="send">Send Message</button>
                 </div>
               </form>
             </div>
@@ -925,5 +924,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/smtp.js"></script>
+    <script src="assets/js/email.js"></script>
   </body>
 </html>
