@@ -115,16 +115,17 @@
       id="hero"
       class="d-flex flex-column justify-content-center align-items-center"
     >
-      <div class="hero-container" data-aos="fade-in">
-        <h1 class="lang" key="hero">I am Roberto Contreras</h1>
+      <div class="hero-container" id="hero-es" data-aos="fade-in" >
+        <h1 class="lang" key="hero">Soy Roberto Contreras</h1>
         <p>
           <span
-            class="typed lang"
+            id="este"
+            class="typed"
             key="hero-detail"
-            data-typed-items="Computer Engineer, Web Developer, Systems and Technology Advisor"
           ></span>
         </p>
       </div>
+      
     </section>
     <!-- End Hero -->
 
@@ -218,7 +219,7 @@
             >
               <div class="count-box">
                 <i class="icofont-calendar"></i>
-                <span data-toggle="counter-up">3</span>
+                <span data-toggle="counter-up">2</span>
                 <p><strong class="lang" key="years">Years Of Experience</strong></p>
               </div>
             </div>
@@ -821,71 +822,43 @@
             </div>
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
               <form
                 onsubmit="return false"
+                id="basic-form"
                 role="form"
                 class="php-email-form"
               >
-                <input type="hidden" name="_captcha" value="false" />
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="name" class="lang" key="name">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      data-rule="minlen:4"
-                      data-msg="Please enter at least 4 chars"
-                    />
-                    <div class="validate"></div>
+                    <input type="text" name="name" class="form-control" id="name"/>
+                    <label class="error lang validate" key="error-name" for="name" id="name_error"></label>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="name" class="lang" key="email">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      data-rule="email"
-                      data-msg="Please enter a valid email"
-                    />
-                    <div class="validate"></div>
+                    <input type="email" class="form-control" name="email" id="email"/>
+                    <label class="error lang validate" key="error-email" for="email" id="email_error"></label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="name" class="lang" key="subject">Subject</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 8 chars of subject"
-                  />
-                  <div class="validate"></div>
+                  <input type="text" class="form-control" name="subject" id="subject"/>
+                  <label class="error lang validate" key="error-subj" for="subject" id="subject_error"></label>
                 </div>
                 <div class="form-group">
                   <label for="name" class="lang" key="message">Message</label>
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="10"
-                    data-rule="required"
-                    data-msg="Please write something"
-                  ></textarea>
-                  <div class="validate"></div>
+                  <textarea class="form-control" name="message" rows="10" id="message"></textarea>
+                  <label class="error lang validate" key="error-msg" for="message" id="message_error"></label>
                 </div>
                 <div class="mb-3">
                   <div class="loading lang" key="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message lang" key="message-sent">
+                  <div class="sent-message lang" key="message-sent" id="ok">
                     Your message has been sent. Thank you!
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="lang" key="send-message" id="send">Send Message</button>
+                  <button type="submit" class="lang button" key="send-message" id="send">Send Message</button>
                 </div>
               </form>
             </div>
@@ -912,7 +885,6 @@
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/vendor/counterup/counterup.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
@@ -926,5 +898,6 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/smtp.js"></script>
     <script src="assets/js/email.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
   </body>
 </html>

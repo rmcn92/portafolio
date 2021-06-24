@@ -23,7 +23,7 @@
     "coffee":"Tazas de Café",
     "skills":"Habilidades",
     "skills-text":"Desarrollo web basado en estándares W3C, Responsive Web Design, MVC, UX/UI - Experiencia de Usuario. Interfaz de Usuario, Accesibilidad y Usabilidad.",
-    "resume-text":"Ingeniero Informático con más de 3 años de experiencia en el campo, participando en proyectos en el sector aeronáutico.",
+    "resume-text":"Ingeniero Informático con más de 2 años de experiencia en el campo, participando en proyectos en el sector aeronáutico.",
     "sumary":"Sumario",
     "sumary-text":"Mi principal objetivo es implementar buenas prácticas y un código limpio código. Considero muy importante el trabajo en equipo, como la buena comunicación y crear un buen ambiente de trabajo.",
     "education":"Educación",
@@ -47,7 +47,11 @@
     "message":"Mensaje",
     "loading":"Cargando",
     "message-sent":"Tu mensaje ha sido enviado. ¡Gracias!",
-    "send-message":"Enviar Mensaje"
+    "send-message":"Enviar Mensaje",
+    "error-name":"El nombre debe tener al menos 3 caracteres",
+    "error-email":"El email debe estar en un formato válido: abc@dominio.tld",
+    "error-subject":"El asunto debe tener al menos 5 caracteres",
+    "error-message":"El mensaje debe tener al menos 10 caracteres"
   },
   "en":{
     "home":"Home",
@@ -73,7 +77,7 @@
     "coffee":"Cups of Coffee",
     "skills":"Skills",
     "skills-text":"Web development based on W3C standards, Responsive Web Design, MVC, UX/UI - User Experience. User Interface, Accessibility and Usability.",
-    "resume-text":"Computer Engineer with more than 3 years of experience in the field, participating in projects in the aeronautical sector.",
+    "resume-text":"Computer Engineer with more than 2 years of experience in the field, participating in projects in the aeronautical sector.",
     "sumary":"Sumary",
     "sumary-text":"My Main objetive is to implement good practices and clean code. I consider teamwork very important, like good communication and create a good working environment.",
     "education":"Education",
@@ -97,6 +101,10 @@
     "message":"Message",
     "loading":"Loading",
     "message-sent":"Your message has been sent. Thank you!",
-    "send-message":"Send Message"
+    "send-message":"Send Message",
+    "error-name":"Name should be at least 3 characters",
+    "error-email":"The email should be in the format: abc@domain.tld",
+    "error-subject":"Subject should be at least 5 characters",
+    "error-message":"Message should be at least 10 characters"
   }
 }
