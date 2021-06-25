@@ -16,6 +16,10 @@
     
 
   $(document).ready(function(){
+
+   
+
+
     var spanish;
     $("#es").click(function(){
       spanish = true;
@@ -25,6 +29,7 @@
       localStorage.setItem("lang", "es");
       console.log(localStorage.getItem("lang")+" Español");
       location.reload();
+
 
     });
     var english;
@@ -37,17 +42,23 @@
       });
       location.reload();
 
+
     });
     if (localStorage.getItem("lang") === "es" || spanish == true) {
       $('#este').attr({
         'data-typed-items': 'Ingeniero de Computación, Desarrollador Web, Asesor de Sistemas y Tecnología'
       });
+      $("#es").toggleClass("active");
+
       
     } 
     else if(localStorage.getItem("lang") === "en" || english == true) {
       $('#este').attr({
         'data-typed-items': 'Computer Engineer, Web Developer, Systems and Technology Advisor'
       });
+      $("#en").toggleClass("active");
+
+
 
     }
     

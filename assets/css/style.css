@@ -116,6 +116,17 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+#header .btn-lang button:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-lang:active, .active{
+  text-decoration: none;
+  color: #fff;
+}
+
 #main {
   margin-left: 300px;
 }
