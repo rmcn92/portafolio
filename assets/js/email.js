@@ -43,7 +43,7 @@ $(document).ready(function() {
               Email.send({
                   Host: "smtp.gmail.com",
                   Username: "rmcn92prueba@gmail.com",
-                  Password: "4760Rmcn",
+                  Password: "rmcn92mx./*",
                   To: "1992rmcn@gmail.com",
                   From: inputs.elements["email"].value,
                   Subject: inputs.elements["subject"].value,
@@ -97,7 +97,7 @@ $(document).ready(function() {
                 Email.send({
                     Host: "smtp.gmail.com",
                     Username: "rmcn92prueba@gmail.com",
-                    Password: "4760Rmcn",
+                    Password: "rmcn92mx./*",
                     To: "1992rmcn@gmail.com",
                     From: inputs.elements["email"].value,
                     Subject: inputs.elements["subject"].value,
