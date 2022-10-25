@@ -41,10 +41,10 @@ $(document).ready(function() {
           submitHandler: function(form) {
               const inputs = document.querySelector('#basic-form');
               Email.send({
-                  Host: "smtp.gmail.com",
-                  Username: "rmcn92prueba@gmail.com",
-                  Password: "rmcn92mx./*",
-                  To: "1992rmcn@gmail.com",
+                Host: "smtp.elasticemail.com",
+                Username: "email92mx@gmail.com",
+                Password: "5F59FC20E07CC13E9AD46814CA0BA7D622E2",
+                To: "rmcn92mx@gmail.com",
                   From: inputs.elements["email"].value,
                   Subject: inputs.elements["subject"].value,
                   Body: inputs.elements["message"].value + "<br><br>" + "Correo: " + inputs.elements["email"].value+ "<br>" + "Nombre: " + inputs.elements["name"].value 
@@ -95,10 +95,10 @@ $(document).ready(function() {
             submitHandler: function(form) {
                 const inputs = document.querySelector('#basic-form');
                 Email.send({
-                    Host: "smtp.gmail.com",
-                    Username: "rmcn92prueba@gmail.com",
-                    Password: "rmcn92mx./*",
-                    To: "1992rmcn@gmail.com",
+                  Host: "smtp.elasticemail.com",
+                  Username: "email92mx@gmail.com",
+                  Password: "5F59FC20E07CC13E9AD46814CA0BA7D622E2",
+                  To: "rmcn92mx@gmail.com",
                     From: inputs.elements["email"].value,
                     Subject: inputs.elements["subject"].value,
                     Body: inputs.elements["message"].value + "<br><br>" + "Correo: " + inputs.elements["email"].value+ "<br>" + "Nombre: " + inputs.elements["name"].value 
