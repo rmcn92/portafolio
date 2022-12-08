@@ -44,7 +44,7 @@ $(document).ready(function() {
                 Host: "smtp.elasticemail.com",
                 Username: "email92mx@gmail.com",
                 Password: "5F59FC20E07CC13E9AD46814CA0BA7D622E2",
-                To: "rmcn92mx@gmail.com",
+                To: "rmcn92eeuu@gmail.com",
                   From: inputs.elements["email"].value,
                   Subject: inputs.elements["subject"].value,
                   Body: inputs.elements["message"].value + "<br><br>" + "Correo: " + inputs.elements["email"].value+ "<br>" + "Nombre: " + inputs.elements["name"].value 
@@ -98,7 +98,7 @@ $(document).ready(function() {
                   Host: "smtp.elasticemail.com",
                   Username: "email92mx@gmail.com",
                   Password: "5F59FC20E07CC13E9AD46814CA0BA7D622E2",
-                  To: "rmcn92mx@gmail.com",
+                  To: "rmcn92eeuu@gmail.com",
                     From: inputs.elements["email"].value,
                     Subject: inputs.elements["subject"].value,
                     Body: inputs.elements["message"].value + "<br><br>" + "Correo: " + inputs.elements["email"].value+ "<br>" + "Nombre: " + inputs.elements["name"].value 
